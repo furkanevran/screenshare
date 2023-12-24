@@ -20,7 +20,7 @@ room.onPeerJoin((peerId) => {
   room.addStream(activeStream, peerId);
 });
 
-room.onPeerStream((stream, peerId, peerMetadata) => {
+room.onPeerStream((stream) => {
   stopStream(false);
   activeStream = stream;
   videoElement.srcObject = stream;
@@ -68,8 +68,3 @@ streamButton?.addEventListener('click', async () => {
 
   await startStream();
 });
-
-/*
-const videoStream = await navigator.mediaDevices.getUserMedia({ video: true });
-player.src = { src: videoStream, type: 'video/object' };
-*/
