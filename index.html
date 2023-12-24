@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peerstream</title>
+  <!-- <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+  <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js/dist/video.min.js"></script> -->
+</head>
+
+<body>
+  <!-- <media-player stream-type="ll-live" src="https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4">
+    <media-provider></media-provider>
+    <media-video-layout></media-video-layout>
+
+  </media-player> -->
+  <video controls autoplay muted></video>
+  <button id="stream">Stream</button>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
